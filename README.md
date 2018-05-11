@@ -1,4 +1,5 @@
 # document-memorandum
+![](https://img6.bdstatic.com/img/image/public/liuyifei.jpg)
 #### 端口相关
 * 查找端口   
 netstat -ano|findstr 8005
@@ -132,14 +133,16 @@ taskkill/pid 3116
 * npm help json  
  
 #### npm tips
-** npm shrinkwrap,可以将项目中的模块版本进行精确锁定：
-这时候只需要运行命令 npm shrinkwrap,便会产生一个npm-shrinkwrap.json文件，
-这个文件保存了所有当前使用的依赖模块的版本：把该文件提交到git仓库中，这
-样其他人在clone你的项目的时候，执行npm install命令时，npm检测到该文件中
-的信息会完整的还原出完全相同的依赖树 **   
+* npm shrinkwrap,可以将项目中的模块版本进行精确锁定这时候只需要运行命令 
+npm shrinkwrap,便会产生一个npm-shrinkwrap.json文件，这个文件保存了所有
+当前使用的依赖模块的版本：把该文件提交到git仓库中，这样其他人在clone你
+的项目的时候，执行npm install命令时，npm检测到该文件中的信息会完整的还
+原出完全相同的依赖树  
 
 #### vue
 ```
 cnpm install -g vue-cli  
 vue init webpack my_vue_project
 ```
+![](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/h%3D452/sign=fc15f432b9fb4316051f7b7f12a54642/902397dda144ad3498fa137edba20cf430ad8586.jpg)
+

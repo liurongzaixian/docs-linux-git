@@ -41,7 +41,13 @@ taskkill/pid 3116
 * git 文件撤销相关
     * git checkout <hash> <filename>     将<hash>值的文件 恢复到当前的状态下
     * git checkout filename 未commit的文件都会被撤销更改
-
+* git 暂存区相关
+    * git rm --cache filename --删除暂存区文件
+    * git rm -f filename --删除工作区和暂存区文件
+* 删除错误提交的commit
+    * git reset --soft 版本库ID 仅仅只是撤销已提交的版本库，不会修改暂存区和工作区
+    * git reset --mixed 版本库ID 仅仅只是撤销已提交的版本库和暂存区，不会修改工作区
+    * git reset --hard 版本库ID 彻底将工作区、暂存区和版本库记录恢复到指定的版本库
 * git tag 相关
     * git tag 查看本地tag
     * git tag v0.1.2-light  创建轻量标签
@@ -142,6 +148,7 @@ taskkill/pid 3116
 * npm prune #清除未被使用到的模块
 * npm help json
 * npm list -g --depth 0 查看全局安装过的包
+
 
 #### npm tips
 * npm shrinkwrap,可以将项目中的模块版本进行精确锁定这时候只需要运行命令

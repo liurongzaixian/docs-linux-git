@@ -32,7 +32,8 @@ taskkill/pid 3116
     * git log --pretty=oneline
     * git reflog
     * git log --pretty=oneline 文件名
-
+* git 查看某个版本的文件内容
+    * git show commitid filename
 * git 提交相关
     * git add -A  提交所有变化
     * git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)

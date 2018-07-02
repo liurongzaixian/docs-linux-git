@@ -113,8 +113,9 @@ taskkill/pid 3116
     * git stash 相关
         * git stash || git stash save "说明信息"
         * git stash list
-        * git stash pop || git stash pop stash@{n}
-        * git stash drop || git stash drop stash@{n}
+        * git stash apply stash@{n}  保留stash记录
+        * git stash pop || git stash pop stash@{n}       将stash弹出,同时会删除stash记录
+        * git stash drop || git stash drop stash@{n}     删除stash记录
         * git stash clear
         * git show stash@{n}
         * git stash不针对特定的分支，切换分支后，stash内容不变，所以弹出时要小心
@@ -124,7 +125,7 @@ taskkill/pid 3116
         * git config --local --list
         * git config --global --list
         * git config --local user.name yourname
-        g* it config --local user.email youremail
+        * git config --local user.email youremail
 
 #### npm 相关操作
 * npm install -g cnpm -registry=https://registry.npm.taobao.org

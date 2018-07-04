@@ -5,12 +5,6 @@
 netstat -ano|findstr 8005
 * 关闭端口
 taskkill/pid 3116
-* 添加文字省略...
-```
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-```
 
 #### nodeJS模块文件形参
 ```
@@ -32,8 +26,10 @@ taskkill/pid 3116
     * git log --pretty=oneline
     * git reflog
     * git log --pretty=oneline 文件名
+    * git log filename
 * git 查看某个版本的文件内容
     * git show commitid filename
+    * git checkout <hash> <filename>  文件的版本覆盖
 * git 提交相关
     * git add -A  提交所有变化
     * git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
@@ -49,6 +45,9 @@ taskkill/pid 3116
     * git reset --soft 版本库ID 仅仅只是撤销已提交的版本库，不会修改暂存区和工作区
     * git reset --mixed 版本库ID 仅仅只是撤销已提交的版本库和暂存区，不会修改工作区
     * git reset --hard 版本库ID 彻底将工作区、暂存区和版本库记录恢复到指定的版本库
+* git 版本回退相关
+    * git reset --hard HEAD~number
+    * git reset --hard commitid
 * git tag 相关
     * git tag 查看本地tag
     * git tag v0.1.2-light  创建轻量标签
@@ -98,10 +97,6 @@ taskkill/pid 3116
 
     * git 修改文件或者移动文件
         * git mv oldfile newfile
-
-    * git 版本回退相关
-        * git reset --hard HEAD~number
-        * git reset --hard commitid
 
     * git diff 相关
         * git diff  查看尚未暂存的文件更新了哪些部分

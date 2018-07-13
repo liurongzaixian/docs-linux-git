@@ -99,11 +99,10 @@ taskkill/pid 3116
         * git mv oldfile newfile
 
     * git diff 相关
-        * git diff  查看尚未暂存的文件更新了哪些部分
+        * git diff 查看尚未暂存的文件更新了哪些部分 注意:是工作区和Index区的比较,如果Index区是空的则直接和当前版本区进行比较
         * git diff filename 查看尚未暂存的某个文件更新了哪些
-        * git diff –cached 查看已经暂存起来的文件和上次提交的版本之间的差异
-        * git diff –cached filename 查看已经暂存起来的某个文件和上次提交的版本之间的差异
-        * git diff commitid commitid 查看某两个版本之间的差
+        * git diff [HEAD^|HEAD~n|commitId] filename 查看已经暂存起来的文件和版本库之间的差异
+        * git diff commitid commitid 查看某两个版本之间的差异
         * git diff commitid:filename commitid:filename 查看某两个版本的某个文件之间的差异
 
     * git stash 相关

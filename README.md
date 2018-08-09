@@ -67,21 +67,23 @@ taskkill/pid 3116
     * git branch branchname 创建本地分支
     * git checkout branchname 切换分支
     * git checkout -b branchname 创建并切换分支
-    * git branch -d branchname 删除本地分支
     * git merge branchname 将branchname合并进当前的分支
-    * git push origin branchname 推送本地分支到远程仓库
-        * 远程先开好分支然后拉到本地
-        git checkout -b feature-branch origin/feature-branch
-        检出远程的feature-branch分支到本地
-        * 本地先开好分支然后推送到远程
-            git push origin feature-branch:feature-branch
-            或者  git push origin branchname  git push origin :test
-            或者 git branch -r -d origin/branchname  删除远程分支 不会删除本地的分支
-        * git branch 的替换
-            git push origin dev:master -f 将master分支的内容替换为dev
-            git checkout master // 切换到旧的分支
-            git reset --hard develop  // 将本地的旧分支 master 重置成 develop
-            git push origin master --force // 再推送到远程仓库
+	* 获取远程分支到本地 (创建并切换分支)
+		- git checkout -b branchName origin/branchName
+	* 本地先开好分支然后推送到远程
+		- git push origin branchName:branchName 
+		- git push origin branchname  
+	* 删除本地分支
+		- git branch -d branchname 删除本地分支
+		- git branch -D branchname 强制删除本地分支
+	* 删除远程分支	
+		- git push origin :test 
+		- git push origin -d branchName 
+	* git branch 的替换
+		git push origin dev:master -f 	// 远程dev分支替换master分支
+		git checkout master 			// 切换到master的分支
+		git reset --hard dev  			// 将本地的旧分支 master 重置成 dev
+		git push origin master --force 	// 再推送到远程仓库 (不是必须)
 
     * git 忽略文件
     touch .gitignore

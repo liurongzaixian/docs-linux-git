@@ -29,14 +29,13 @@ taskkill/pid 3116
     * git log filename
 * git 查看某个版本的文件内容
     * git show commitid filename
-    * git checkout <hash> <filename>  文件的版本覆盖
 * git 提交相关
     * git add -A  提交所有变化
     * git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
     * git add .   提交被修改(modified)和新文件(new)和，不包括被删除(deleted)文件
 
-* git 文件撤销相关
-    * git checkout <hash> <filename>     将<hash>值的文件 恢复到当前的状态下
+* git 文件撤销或者覆盖相关
+    * git checkout commitId filename     将commitId的文件 恢复到当前的状态下
     * git checkout filename 未commit的文件都会被撤销更改
 * git 暂存区相关
     * git rm --cache filename --删除暂存区文件

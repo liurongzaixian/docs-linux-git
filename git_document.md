@@ -35,6 +35,7 @@ taskkill/pid 3116
     * git add .   提交被修改(modified)和新文件(new)和，不包括被删除(deleted)文件
 
 * git 文件撤销或者覆盖相关
+    * git checkout -m commitId 文件/文件夹 获取某个版本文件或文件夹到当前工作区
     * git checkout commitId filename     将commitId的文件 恢复到当前的状态下
     * git checkout filename 未commit的文件都会被撤销更改
 * git 暂存区相关
